@@ -1,0 +1,27 @@
+.ambient-glow {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40vh;
+  max-height: 400px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ambient-glow__gradient {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120%;
+  height: 100%;
+  background: radial-gradient(
+    ellipse 80% 60% at 50% 100%,
+    var(--glow-color) 0%,
+    transparent 70%
+  );
+  opacity: 0.5;
+  filter: blur(60px);
+  transition: background 0.5s ease;
+}

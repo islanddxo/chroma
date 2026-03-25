@@ -1,0 +1,76 @@
+.image-card {
+  break-inside: avoid;
+  padding-bottom: 1rem;
+}
+
+.image-card__link {
+  position: relative;
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--card-bg);
+  
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+
+
+@media (min-width: 768px) {
+  .image-card {
+    padding-top: 1.25rem;
+    
+  }
+}
+
+@media (min-width: 1024px) {
+  .image-card {
+    padding-top: 1.25rem;
+    
+  }
+}
+
+.image-card__img:hover {
+  filter: brightness(65%);
+  transition: filter 0.3s ease;
+}
+
+.image-card__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.image-card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.image-card__link:hover .image-card__overlay {
+  opacity: 1;
+}
+
+
+.image-card__attribution {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: bold;
+}
+
+.image-card__attribution-link {
+  color: rgba(255, 255, 255, 0.95);
+  text-decoration: none;
+  text-underline-offset: 2px;
+  
+}
+
+.image-card__attribution-link:hover {
+  color: white;
+}

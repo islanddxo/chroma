@@ -1,0 +1,12 @@
+.app {
+  min-height: 100vh;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  position: relative;
+}
+
+.app__main {
+  position: relative;
+  z-index: 1;
+  padding-top: 0.5rem;
+}

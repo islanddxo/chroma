@@ -1,0 +1,77 @@
+/* Chroma - Design tokens and base styles */
+
+:root {
+  /* Fonts */
+  --font-display: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Light theme */
+  --bg-primary: #fdfdfd;
+  --bg-secondary: #fdfdfd;
+  --header-bg: rgba(250, 248, 246, 0.85);
+  --card-bg: rgb(255, 255, 255, .95);
+  --search-bg: rgb(232, 232, 232, .85);
+  --hover-bg: rgba(0, 0, 0, 0.04);
+  --border: rgba(0, 0, 0, 0.08);
+  --border-subtle: rgba(0, 0, 0, 0.06);
+  --text-primary: #494949;
+  --text-secondary: #8a8a8a;
+  --text-tertiary: #6a6a6a;
+  --accent: #000000;
+  --accent-subtle: rgba(184, 77, 122, 0.12);
+  --shadow-soft: rgba(0, 0, 0, 0.06);
+  --shadow-elevated: rgba(0, 0, 0, 0.1);
+  --error: #c62828;
+  --toggle-track: #e8e8e8;
+  --toggle-thumb-bg: #ffffff;
+}
+
+[data-theme='dark'] {
+  --bg-primary: #121214;
+  --bg-secondary: #1a1a1d;
+  --header-bg: rgba(18, 18, 20, 0.9);
+  --card-bg: #1e1e21;
+  --search-bg: rgb(73, 73, 73, .85);
+  --hover-bg: rgba(255, 255, 255, 0.06);
+  --border: rgba(255, 255, 255, 0.1);
+  --border-subtle: rgba(255, 255, 255, 0.06);
+  --text-primary: #ffffff;
+  --text-secondary: #b0b0b0;
+  --text-tertiary: #8a8a8a;
+  --accent: #ffffff;
+  --accent-subtle: rgba(232, 120, 156, 0.2);
+  --shadow-soft: rgba(0, 0, 0, 0.3);
+  --shadow-elevated: rgba(0, 0, 0, 0.5);
+  --error: #ef5350;
+  --toggle-track: #494949;
+  --toggle-thumb-bg: #a8a8a8;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.5;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
