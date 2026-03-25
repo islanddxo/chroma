@@ -2,8 +2,8 @@
 
 A Pinterest-inspired visual discovery app that allows users to explore aesthetic imagery using search and color-based discovery.
 
-**Live Demo:** https://your-vercel-link.vercel.app  
-**GitHub:** https://github.com/yourusername/chroma  
+**Live Demo:** https://chroma-mu.vercel.app
+**GitHub:** https://github.com/islanddxo/chroma  
 
 ---
 
